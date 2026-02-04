@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>For You 💛</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to bottom, #fff7e6, #ffe6f0);
+            color: #333;
+            text-align: center;
+        }
+
+        nav {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: #ffffffcc;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #444;
+            font-weight: 600;
+        }
+
+        section {
+            min-height: 100vh;
+            padding: 80px 20px 120px;
+            display: none;
+            animation: fade 1s ease;
+        }
+
+        section.active {
+            display: block;
+        }
+
+        h1 {
+            font-size: 2.2em;
+            color: #e75480;
+        }
+
+        p {
+            max-width: 600px;
+            margin: 20px auto;
+            font-size: 1.1em;
+            line-height: 1.7;
+        }
+
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 25px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+
+        .characters {
+            font-size: 3em;
+            margin-top: 20px;
+        }
+
+        button {
+            background: #e75480;
+            border: none;
+            color: white;
+            padding: 12px 30px;
+            font-size: 1em;
+            border-radius: 30px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background: #d64570;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HOME -->
+    <section id="home" class="active">
+        <h1>Hey… 🌸</h1>
+        <div class="card">
+            <p>
+                Bachcha bahut naraj kar diya na mene ...!<br>
+
+            </p>
+            <div class="characters">😊 🖍️</div>
+            <p style="font-size:0.9em;color:#777;">
+                (Bas thoda sa cute touch, taaki dil halka lage)
+            </p>
+        </div>
+    </section>
+
+    <!-- SORRY -->
+    <section id="sorry">
+        <h1>I’m Truly Sorry</h1>
+        <div class="card">
+            <p>
+                I know you must be missing me too..
+            </p>
+            <p>
+                But my Scandal🙃 are such that you are tired🙂 from me.<br>
+                Jo ho gya vo change nahi kar sakta but bachcha but I Tell ladoo is only for cutegirl...!
+            </p>
+            <div class="characters">😔 🧡</div>
+        </div>
+    </section>
+
+    <!-- FEELINGS -->
+    <section id="feelings">
+        <h1>Dil Se...🫶🏻</h1>
+        <div class="card">
+            <p>
+                You know this Raj's birth always for one girl whose name is Dhabu.
+                And this dhabu's birth for your ladoo😁😁
+            </p>
+            <p>
+                Bas ne have ketla divas ruthi ne rais <br>
+                nahi gamtu have...
+            </p>
+            <p>
+                You are not my habit, you are my *choice*.<br>
+                When you fall silent,
+                the world starts to feel noisy.😶
+
+            </p>
+            <div class="characters">🧸 🌼</div>
+            <p style="font-size:0.9em;color:#666;">
+                (Jaise Shin-chan ki shararat ke peeche innocence hoti hai
+                aur Chhota Bheem ki strength ke peeche care)
+            </p>
+        </div>
+        <button onclick="alert('This song dedicate  for you...')">
+            <a href="https://youtu.be/Cb6wuzOurPc?si=CRMM-Zzv7CU2CLBB">Listen</a>
+        </button>
+    </section>
+
+    <section id="Wish">
+        <h1>Bs Ek Wish…❤️</h1>
+        <div class="card">
+            <p>
+                Chal sathe ek bija no hath pakdi ne apdu future bright banaviye ek question nai puchhis have thi k jethi
+                tane hurt thay mari ghelii
+            </p>
+            <p>
+                Chal Aa ek Chapter patavyu khushi thi to ek new chapter start kariye k jeno end apde vicharyo hato e
+                hoy...!
+            </p>
+            <div class="characters">❤️ 👩🏼‍❤️‍👨🏼</div>
+
+        </div>
+        <button onclick="alert('You are always my one and only favourite girl after my mom !')">
+            <a href="https://youtube.com/shorts/hlS8Jov4fgM?si=CxECa3EQYcJRSVmd">Oy Sambhal...</a>
+        </button>
+    </section>
+
+    <!-- PROPOSE -->
+    <section id="propose">
+        <h1>Ek Wish…</h1>
+        <div class="card">
+            <p>
+                Sweet heart big big love you from your honey
+            </p>
+            <p>
+                Will you be my valentine !?, world's cutest girl my wiffyy
+            </p>
+            <div class="characters">💛 🌈</div>
+
+        </div>
+        <button onclick="alert('Chahe haan ho ya na… main tumhari respect karta hoon 💛')">
+            <a href="https://youtube.com/clip/UgkxVmuEp6PI7MIBlRIHOocCYzeSiwJEmIMx?si=HJrY9MfL3QfIMyKt">Your Time</a>
+        </button>
+    </section>
+
+    <!-- NAV -->
+    <nav>
+        <a href="#" onclick="show('home')">Home</a>
+        <a href="#" onclick="show('sorry')">Sorry</a>
+        <a href="#" onclick="show('feelings')">ForYou</a>
+        <a href="#" onclick="show('Wish')">😊</a>
+        <a href="#" onclick="show('propose')">Listen</a>
+    </nav>
+
+    <script>
+        function show(id) {
+            document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+            window.scrollTo(0, 0);
+        }
+    </script>
+
+</body>
+
+</html>
