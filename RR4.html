@@ -36,19 +36,22 @@
     <form action="https://formspree.io/f/maqdwgor" method="POST">
         <input type="hidden" name="answer" id="answerInput">
 
-        <button type="submit" class="yes" onclick="setAnswer('YES, HAVE KAI FEALINGS NATHI RAI
-            ....! JAVA DYO')">YES, HAVE KAI FEALINGS NATHI RAI
-            ....! JAVA DYO</button><BR><BR>
-        <button type="submit" class="no" onclick="setAnswer('NO ,EVU KASU NATHI BS HU THAKI
-            GY YRR HAMNA')">NO, EVU KASU NATHI BS HU THAKI
-            GY YRR HAMNA </button><BR><BR>
-        <button type="submit" class="mebe" onclick="setAnswer('THODAK TIME MA ANS DAV NE Yrr')">THODAK TIME MA ANS DAV NE Yrr</button>
-    </form>
+        <button type="submit" onclick="setAnswer('YES, HAVE KAI FEALINGS NATHI RAI ....! JAVA DYO')">
+    YES, HAVE KAI FEALINGS NATHI RAI ....! JAVA DYO
+</button>
+<br><br>
+
+<button type="submit" onclick="setAnswer('NO, EVU KASU NATHI BS HU THAKI GY YRR HAMNA')">
+    NO, EVU KASU NATHI BS HU THAKI GY YRR HAMNA
+</button>
+<br><br>
+
+<button type="submit" onclick="setAnswer('THODAK TIME MA ANS DAV NE Yrr')">
+    THODAK TIME MA ANS DAV NE Yrr
+</button>
+  </form>
 
     <script>
-        function setAnswer(choice) {
-            document.getElementById("answerInput").value = choice;
-        }
         function showMessage() {
             document.getElementById("message").style.display = "block";
         }
@@ -61,3 +64,4 @@
 
 
 </html>
+
