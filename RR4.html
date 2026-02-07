@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <style>
+        button {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 30px;
+            background: #ff6b81;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(12px);
+            border-radius: 20px;
+            padding: 30px;
+            max-width: 420px;
+            max-height: 85vh;
+            overflow-y: auto;
+            border: 1px solid black;
+            animation: fadeUp 1.5s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 class="card">
+        mane visvas to nahi k evu thy but<br>
+        hu tane puchhu aa sachu chhe bharat e kahyu e k have mara par fealings nathi rai e !???<br>
+
+    </h2>
+    <form action="https://formspree.io/f/maqdwgor" method="POST">
+        <input type="hidden" name="answer" id="answerInput">
+
+        <button type="submit" class="yes" onclick="setAnswer('YES')">Yes</button>
+        <button type="submit" class="no" id="noBtn" onclick="setAnswer('NO')">No</button>
+    </form>
+
+    <script>
+        function setAnswer(choice) {
+            document.getElementById("answerInput").value = choice;
+        }
+        function showMessage() {
+            document.getElementById("message").style.display = "block";
+        }
+        /*sent ans code*/
+        function setAnswer(choice) {
+            document.getElementById("answerInput").value = choice;
+        }
+    </script>
+</body>
+
+</html>
