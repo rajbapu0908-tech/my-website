@@ -34,6 +34,30 @@
             border: px solid black;
             font-weight: 600;
         }
+        .top-nav{
+  position: fixed;
+  bottom: 80px;        /* 👈 NEXT ke upar aa jayega */
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background: #ffffffc9;
+  padding: 10px 0;
+  border-radius: 20px;
+}
+
+.next-btn{
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 12px 40px;
+  background: pink;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
 
         section {
             min-height: 100vh;
@@ -199,14 +223,15 @@
     </section>
 
     <!-- NAV -->
-    <nav>
+    <nav class="top-nav">
         <a href="#" onclick="show('home')">Home</a>
         <a href="#" onclick="show('sorry')">Sorry</a>
         <a href="#" onclick="show('feelings')">ForYou</a>
         <a href="#" onclick="show('Wish')">😊</a>
         <a href="#" onclick="show('propose')">Listen</a>
-        <a href="RR4.html">NEXT</a>
+        
     </nav>
+    <a href="RR4.html" class="next.btn">NEXT</a>
 
     <script>
         function show(id) {
@@ -220,5 +245,6 @@
 
 
 </html>
+
 
 
