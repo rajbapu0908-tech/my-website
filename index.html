@@ -38,6 +38,13 @@
             color: #000;
             border-bottom: 1px solid #000;
         }
+        button {
+            padding: 12px 26px;
+            background-color: peru;
+            border-radius: 25px;
+            border: 1px solid black;
+            font-size: 15px;
+            cursor: pointer;
     </style>
 </head>
 
@@ -51,8 +58,14 @@
         <p>
             This is simply an acknowledgement of that.
         </p>
-        <a href="RR1.html">Continue</a>
+        <button onclick="next()">For Special ONE ! </button>
     </div>
+    <script>
+        function next() {
+            window.location.href = "RR1.html";
+        }
+    </script>
 </body>
+
 
 </html>
