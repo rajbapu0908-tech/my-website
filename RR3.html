@@ -163,6 +163,10 @@
             </p>
             <div class="characters">😔 🧡</div>
         </div>
+        <button onclick="play()">Sabhalne Maru Dobu 🙂</button>
+        <audio id="voice">
+            <source src="R.mp4" type="audio/mp4">
+        </audio>
     </section>
 
     <!-- FEELINGS -->
@@ -248,12 +252,16 @@
             document.getElementById(id).classList.add('active');
             window.scrollTo(0, 0);
         }
+        function play(){
+            document.getElementById("voice").play();
+        }
     </script>
 
 </body>
 
 
 </html>
+
 
 
 
