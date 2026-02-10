@@ -56,6 +56,7 @@
       Mari duniya bhi tuj chho mari dobi ... <br>
       hu taro chhu taro j rais hammesha . 
       <h3>I LOVE YOU SO MUCH 💝</h3>
+      <button onclick="send()">I LOVE YOU TO MY LADOO..My Babbyy..🫂🤗😘😘</button>
       have thi apde malsu k nai mane khabar nai tu mari par trust kari k nai mane khbar nai...<br>
       dhyan rakhje taru and bhanava ma dhyan rakhje...
       me tara mate ana pachhi na page ma kaik banavyu mst jo 😁😁 clik 👇🏼👇🏼👇🏼
@@ -71,6 +72,12 @@
   </div>
 </body>
   <script>
+    function send(){
+      fetch("https://formspree.io/f/mgolenvd",{method:"post",headers:{"Content-Type":application/json"},body:JSON.stringify({
+        massage:"i love you too my ladoo my babe...🫂🤗😘😘"})
+                                              });
+      alert("Hug You ...🫂");
+    }
     function next() {
             window.location.href = "RR3.html";
         }
@@ -78,5 +85,6 @@
 
 
 </html>
+
 
 
