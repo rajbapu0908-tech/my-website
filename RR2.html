@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <title>A simple question</title>
   <style>
@@ -15,32 +14,30 @@
       margin: 0;
     }
     button {
-            padding: 12px 26px;
-            background-color: peru;
-            border-radius: 25px;
-            border: 1px solid black;
-            font-size: 15px;
-            cursor: pointer;
-        }
+      padding: 12px 26px;
+      background-color: peru;
+      border-radius: 25px;
+      border: 1px solid black;
+      font-size: 15px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
     .box {
       max-width: 520px;
       padding: 32px;
       background: #ffffff;
       border: 1px solid #e6e6e6;
     }
-
     h1 {
       font-size: 22px;
       margin-bottom: 16px;
     }
-
     p {
       line-height: 1.6;
     }
-    h3{
+    h3 {
       color: rgb(169, 11, 11);
     }
-
     .note {
       margin-top: 18px;
       font-size: 14px;
@@ -52,41 +49,48 @@
 <body>
   <div class="box">
     <h1>If you’re open to it</h1>
+
     <p>
       Mari duniya bhi tuj chho mari dobi ... <br>
-      hu taro chhu taro j rais hammesha . 
-      <h3>I LOVE YOU SO MUCH 💝</h3>
+      hu taro chhu taro j rais hammesha .
     </p>
-      <button onclick="send()">I LOVE YOU TO MY LADOO..My Babbyy..🫂🤗😘😘</button>
+
+    <h3>I LOVE YOU SO MUCH 💝</h3>
+
+    <button type="button" onclick="send()">
+      I LOVE YOU TO MY LADOO..My Babbyy..🫂🤗😘😘
+    </button>
+
     <p>
       have thi apde malsu k nai mane khabar nai tu mari par trust kari k nai mane khbar nai...<br>
-      dhyan rakhje taru and bhanava ma dhyan rakhje...
-      me tara mate ana pachhi na page ma kaik banavyu mst jo 😁😁 clik 👇🏼👇🏼👇🏼
-      bs ek request karis k<br>
+      dhyan rakhje taru and bhanava ma dhyan rakhje...<br><br>
       Would you consider a fresh start—slowly,
       with better communication and respect?
     </p>
+
     <p class="note">
       There’s no expectation here.
       Whatever you decide is completely okay.
     </p>
-    <button onclick="next()">For Special ONE ! </button>
+
+    <button type="button" onclick="goNext()">For Special ONE !</button>
   </div>
-</body>
+
   <script>
-    function send(){
-      fetch("https://formspree.io/f/mgolenvd",{method:"post",headers:{"Content-Type":application/json"},body:JSON.stringify({
-        massage:"i love you too my ladoo my babe...🫂🤗😘😘"})
-                                              });
+    function send() {
+      fetch("https://formspree.io/f/mgolenvd", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          message: "i love you too my ladoo my babe...🫂🤗😘😘"
+        })
+      });
       alert("Hug You ...🫂");
     }
-    function next() {
-            window.location.href = "RR3.html";
-        }
+
+    function goNext() {
+      window.location.href = "RR3.html";
+    }
   </script>
-
-
+</body>
 </html>
-
-
-
